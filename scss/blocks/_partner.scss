@@ -1,0 +1,40 @@
+.partner__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.partner__item {
+    max-width: 350px;
+    text-align: center;
+}
+
+.partner__img {
+    width: 106px;
+    height: 106px;
+}
+
+.partner__title {
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #36536B;
+}
+
+.partner__text {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #6C8294;
+}
+
+@media (max-width: 660px) {
+    .partner__list {
+        flex-direction: column;;
+        align-items: center;
+    }
+
+    .partner__item {
+        margin-bottom: 20px;
+    }
+}
