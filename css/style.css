@@ -7,9 +7,12 @@
 }
 
 :root{
-    --color1: #666666;
-    --text-color: #fff;
-    --primary-color: #000;
+    --color1: #edf3f8;
+    --color2: #fff;
+    --color3: #36536b04;
+    --color4: #37546d;
+    --color5: #1b262f;
+    --btn-color:#cf5e89;
     --main-text: "DM Serif Display";
 }
 
@@ -31,7 +34,7 @@ body {
     background-position: top -300px right calc(50% - 570px);
     background-size: 900px 900px;
     background-repeat: no-repeat;
-    background-color: #edf3f8;
+    background-color: var(--color1);
 }
 
 @media (max-width: 870px) {
@@ -76,7 +79,7 @@ body {
         height: 50px;
         align-items: center;
         justify-content: center;
-        background-color: #36536b04;
+        background-color: var(--color3);
         transition: .5s ease-in-out;
     }
 }
@@ -111,7 +114,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     text-decoration: none;
-    color: #36536B;
+    color: var(--color4);
     opacity: .7;
     transition: opacity .2s ease;
 }
@@ -153,7 +156,7 @@ body {
     margin: 4px 0;
     width: 20px;
     height: 3px;
-    background-color: #1b262f;
+    background-color: var(--color5);
     border-radius: 50px;
     transition: all .1s ease;
 }
@@ -197,8 +200,8 @@ body {
     font-weight: 600;
     text-decoration: none;
     letter-spacing: .2px;
-    color: white;
-    background-color: #cf5e89;
+    color: var(--color2);
+    background-color: var(--btn-color);
     border: none;
     outline: none;
     border-radius: 24px;
@@ -212,7 +215,7 @@ body {
 }
 
 .button:active {
-    background-color: #cf5e89;
+    background-color: var(--btn-color);
 }
 
 
@@ -766,6 +769,7 @@ body {
 }
 
 .footer__link {
+    text-decoration: none;
     color: white;
     opacity: .6;
     transition: opacity .2s ease;
@@ -825,18 +829,58 @@ body {
     display: inline-block;
 }
 
-.icon__img {
-    display: block;
+.go-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 200;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color1);
+    padding: 6px;
+    display: inline-block;
+    text-align: center;
+}
+.go-top .bx{
+    font-size: 20px;
+}
+
+.go-top:hover {
+    background-color: var(--btn-color);
+}
+
+
+.bx {
     width: 24px;
     height: 24px;
 }
 
-.icon__img path {
-    transition: fill .2s ease;
+.bxl-facebook-square{
+    color: var(--color1);
+    font-size: 30px;
 }
 
-.icon__img:hover path {
-    fill: #da6d97;
+.bxl-twitter {
+    color: var(--color1);
+    font-size: 30px;
 }
+
+.bxl-linkedin-square {
+    color: var(--color1);
+    font-size: 30px;
+}
+
+.bx-up-arrow-alt {
+    color: #000;
+    font-size: 20px;
+}
+
+
+.bx:hover {
+    color: var(--btn-color);
+}
+
 
 
